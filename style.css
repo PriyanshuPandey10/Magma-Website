@@ -43,3 +43,32 @@ html,body{
     cursor: pointer;
     font-size: 18px;
 }
+.bottom_page-1{
+    position: absolute;
+    bottom: 20% ;
+    left:2%;
+    font-size: 2vw;
+    height:40vh;
+    width: 50vw;
+    color: white;
+}
+.bottom_page-1_inner{
+    
+    bottom: 0%;
+    height: 50%;
+    width: 100%;
+    position: absolute;
+    font-size: 2vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.bottom_page-1_inner>button{
+    border: none;
+    border-radius: 50px;
+    background-color: white;
+    color: #0b48eD;
+    padding: 10px 20px;
+    width: 200px; 
+}
