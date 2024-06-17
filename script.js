@@ -204,29 +204,24 @@ end: `250% top`,
 }
 canvas()
 
-
-
-
-
-
 var clutter = "";
 
 document.querySelector("#page4>h1").textContent.split("").forEach(function(dets){
-  clutter += `<span>${dets}</span>`
+    clutter += `<span>${dets}</span>`
 
-  document.querySelector("#page4>h1").innerHTML = clutter;
+    document.querySelector("#page4>h1").innerHTML = clutter;
 })
 
 gsap.to("#page4>h1>span",{
-scrollTrigger:{
-    trigger:`#page4>h1>span`,
-    start:`top bottom`,
-    end:`bottom top`,
-    scroller:`#main`,
-    scrub:.5,
-},
-stagger:.2,
-color:`#fff`
+  scrollTrigger:{
+      trigger:`#page4>h1>span`,
+      start:`top bottom`,
+      end:`bottom top`,
+      scroller:`#main`,
+      scrub:.5,
+  },
+  stagger:.2,
+  color:`#fff`
 })
 
 
@@ -236,7 +231,7 @@ color:`#fff`
 
 
 function canvas1(){
-const canvas = document.querySelector("#page5>canvas");
+  const canvas = document.querySelector("#page5>canvas");
 const context = canvas.getContext("2d");
 
 canvas.width = window.innerWidth;
@@ -340,11 +335,11 @@ frame: frameCount - 1,
 snap: "frame",
 ease: `none`,
 scrollTrigger: {
-scrub: .5,
-trigger: `#page5`,
-start: `top top`,
-end: `250% top`,
-scroller: `#main`,
+  scrub: .5,
+  trigger: `#page5`,
+  start: `top top`,
+  end: `250% top`,
+  scroller: `#main`,
 },
 onUpdate: render,
 });
@@ -364,15 +359,15 @@ var centerShift_x = (canvas.width - img.width * ratio) / 2;
 var centerShift_y = (canvas.height - img.height * ratio) / 2;
 ctx.clearRect(0, 0, canvas.width, canvas.height);
 ctx.drawImage(
-img,
-0,
-0,
-img.width,
-img.height,
-centerShift_x,
-centerShift_y,
-img.width * ratio,
-img.height * ratio
+  img,
+  0,
+  0,
+  img.width,
+  img.height,
+  centerShift_x,
+  centerShift_y,
+  img.width * ratio,
+  img.height * ratio
 );
 }
 ScrollTrigger.create({
@@ -386,5 +381,27 @@ end: `250% top`,
 }
 canvas1()
 
+
+
+
+var clutter = "";
+
+document.querySelector("#page6>h1").textContent.split("").forEach(function(dets){
+    clutter += `<span>${dets}</span>`
+
+    document.querySelector("#page6>h1").innerHTML = clutter;
+})
+
+gsap.to("#page6>h1>span",{
+  scrollTrigger:{
+      trigger:`#page6>h1>span`,
+      start:`top bottom`,
+      end:`bottom top`,
+      scroller:`#main`,
+      scrub:.5,
+  },
+  stagger:.2,
+  color:`#fff`
+})
 
 
